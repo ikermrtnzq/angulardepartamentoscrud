@@ -1,0 +1,20 @@
+<div style="display: flex; flex-direction: column; gap: 30px;margin:auto; width: 50%; padding-top: 40px;">
+    <table>
+        <thead style="background-color:lightblue;border: 3px solid lightblue;">
+            <tr> 
+                <th style="padding-left: 5px;">Numero</th>
+                <th style="padding-left: 5px;">Nombre</th>
+                <th style="padding-left: 5px;">Localidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (departamento of departamentos; track departamento) {
+                <tr style="border: 1px solid lightblue;">
+                    <td style="border: 3px solid lightblue;padding-left: 5px;">{{departamento.numero}}</td>
+                    <td style="border: 3px solid lightblue; padding-left: 5px;">{{departamento.nombre}}</td>
+                    <td style="border: 3px solid lightblue;padding-left: 5px;">{{departamento.localidad}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
