@@ -1,0 +1,7 @@
+workspace:
+  id: c73eff52-745f-4c27-8615-72b04b5d1993
+cloudResources:
+  collections:
+    ../postman/collections/API seguridad empleados: 50003990-35a4021b-523c-40ed-bc92-b46d7811484f
+  globals:
+    ../postman/globals/workspace.globals.yaml: 64b8d401-0265-4741-8490-66b230674832

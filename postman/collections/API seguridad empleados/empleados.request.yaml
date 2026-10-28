@@ -1,0 +1,9 @@
+$kind: http-request
+url: https://apiempleadoscoreoauth.azurewebsites.net/api/empleados
+method: GET
+headers:
+  Authorization: bearer {{json_web_token_1b6k}}
+body:
+  type: json
+  content: ""
+order: 3000

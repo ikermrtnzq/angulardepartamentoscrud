@@ -1,12 +1,13 @@
-<div style="border: 3px solid lightblue; margin: auto; width: 50%; display: flex; flex-direction: column;">
+<div style="border: 5px solid lightblue; margin: auto; width: 50%; display: flex; flex-direction: column; padding: 10px; margin-top: 20px;">
     <h1>CREATE DEPARTAMENTO</h1>
-    <form action="" style="display: flex; flex-direction: column;">
+    <form #formCreate="ngForm" action="" style="display: flex; flex-direction: column; gap: 10px;">
         <label for="">Id Departamento: </label>
-        <input type="number">
+        <input name="cajaid" #cajaid type="number">
         <label for="">Nombre: </label>
-        <input type="text">
+        <input name="cajanombre" #cajanombre type="text">
         <label for="">Localidad: </label>
-        <input type="text">
-        <button>create</button>
+        <input name="cajalocalidad" #cajalocalidad type="text">
+        <button (click)="insertDept()" style="background-color: lightblue; border: 1px solid lightblue; border-radius: 8px;">create</button>
     </form>
+    <p>{{mensaje}}</p>
 </div>

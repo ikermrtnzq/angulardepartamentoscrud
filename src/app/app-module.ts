@@ -8,9 +8,18 @@ import { provideHttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ServiceDepartamentos } from './services/service.departamento';
 import { CreateComponent } from './components/create-component/create-component';
+import { DetallesDepartamentoComponent } from './components/detalles-departamento-component/detalles-departamento-component';
+import { UpdateComponent } from './components/update-component/update-component';
 
 @NgModule({
-  declarations: [App, MenuComponent, HomeComponent, CreateComponent],
+  declarations: [
+    App,
+    MenuComponent,
+    HomeComponent,
+    CreateComponent,
+    DetallesDepartamentoComponent,
+    UpdateComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideHttpClient(), provideBrowserGlobalErrorListeners(), ServiceDepartamentos],
   bootstrap: [App],

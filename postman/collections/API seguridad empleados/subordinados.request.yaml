@@ -1,0 +1,4 @@
+$kind: http-request
+url: https://apiempleadoscoreoauth.azurewebsites.net/api/empleados/subordinados
+method: GET
+order: 4000

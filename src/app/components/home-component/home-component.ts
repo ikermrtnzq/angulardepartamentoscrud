@@ -14,8 +14,17 @@ export class HomeComponent implements OnInit{
     private _service: ServiceDepartamentos, 
     private _cdr: ChangeDetectorRef
   ){}
-  async ngOnInit(): Promise<void> {
+
+  async eliminar(id: number){
+    let response = await this._service.borrarDepartamento(id);
+    await this.cargar()
+  }
+  async cargar(){
     this.departamentos = await this._service.getDepartamentos();
     this._cdr.detectChanges()
   }
+  async ngOnInit(): Promise<void> {
+    await this.cargar()
+  }
+
 }
